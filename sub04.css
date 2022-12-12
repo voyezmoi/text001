@@ -1,0 +1,245 @@
+*{margin: 0; padding: 0; text-decoration: none; list-style-type: none;}
+
+@font-face {
+  font-family: 'Mont-HeavyDEMO';
+  src: url(./font/Mont-HeavyDEMO.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*시작*/
+
+header {
+  position: fixed;
+  max-width: 1100px;
+  top: 10px;
+  right: 50px;
+  z-index: 15;
+}
+.nav1 {
+  position: relative;
+  max-width: 1100px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50px 50px 50px 50px;
+  z-index: 1;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.homebar{
+  width: 1100px;
+  height: 50px;
+  margin: 0px 78px;
+  display: flex;
+  display:table-cell;
+  text-align: center;
+  line-height: 45px;
+  margin-top: 7px;
+}
+
+.home{
+  margin: auto 0px;
+}
+
+.nav2 {
+  position: relative;
+  max-width: 1100px;
+  width: 50px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #FE2857;
+  border-radius: 50px 50px 50px 50px;
+  z-index: 1;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes shadow-drop-center {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+.menubar{
+  width: 1100px;
+  height: 68px;
+  margin: 0px 78px;
+  display: flex;
+  justify-content: space-between;
+  display:table-cell;
+  text-align: center;
+  line-height: 45px;
+  margin-top: 40px;
+}
+
+.menu{
+  margin: auto 0px;
+  transition: all 0.9s;
+}
+
+/*헤더 끝*/
+
+section{
+    width: 100%;
+}
+
+.box{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.box1{
+  position: relative;
+  height: 280px;
+  border-radius: 0px 0px 300px 0px;
+  background: linear-gradient(130deg, rgba(252,87,87,1) 40%, rgba(255,0,87,1) 100%);
+  background-position: center top;
+  background-size: auto;
+  z-index: 6;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title{
+  margin-top: 90px;
+  margin-left: -870px;
+  display:table-cell;
+  text-align: left;
+  color: #fff;
+  position: relative;
+}
+
+.title_text{font-family: 'Mont-HeavyDEMO'; font-size: 70px;}
+.sub_text{font-family: 'Pretendard-Regular'; font-size: 18px;}
+
+.box2{
+    position: absolute;
+    top: 0px;
+    background-color: #F2F4F7;
+    height: 1480px;
+    z-index: 5;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+  }
+
+.post01{
+  position: absolute;
+  margin-top: 280px;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.post01_txt{
+  position: absolute;
+  top: 1080px;
+  margin-left: -330px;
+}
+
+.oo01{
+  position: absolute;
+  top: 1090px;
+  margin-left: 1000px;
+}
+
+.box3{
+  position: relative;
+  top: 1200px;
+  background-color: #fff;
+  width: 100%;
+  height: 1330px;
+  z-index: 4;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+}
+
+.post02{
+  position: absolute;
+  z-index: 4;
+}
+  
+.bg_txt06{
+  position: absolute;
+  z-index: 3;
+  top: 270px;
+}
+
+.post02_txt{
+  position: absolute;
+  top: 800px;
+  margin-left: -580px;
+}
+
+.oo02{
+  position: absolute;
+  top: 800px;
+  margin-left: 1000px;
+}
+
+
+  
+
+
+/*footer*/
+
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.fbar{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 2650px;
+  width: 100%;
+  height: 160px;
+  border-radius: 300px 0px 0px 0px;
+  background: #4B4C50;
+  background-position: center top;
+  background-size: auto;
+  z-index: 6;
+  list-style:none;
+}
+
+.ft_logo{
+  margin-top: 40px;
+  float: left;
+}
+
+.add{
+  margin-left: 530px;
+  margin-top: 40px;
+  float: left;
+  text-align: right;
+  font-family: 'Pretendard-Regular';
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 24px;
+  color: #fff;
+}
